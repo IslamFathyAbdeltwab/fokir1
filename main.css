@@ -1,0 +1,618 @@
+body {
+    padding: 0;
+    margin: 4px;
+}
+
+.clr-fix {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+
+
+
+
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.header h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 20px;
+
+}
+
+.header h2::after {
+    content: "";
+    width: 13%;
+    height: 1px;
+    background-color: #ed3b5f;
+    position: absolute;
+    top: 117%;
+    right: 50%;
+    transform: translate(50%);
+
+}
+
+.header h2::before {
+    content: "";
+    width: 8%;
+    height: 1px;
+    background-color: #ed3b5f;
+    position: absolute;
+    top: 125%;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.line {
+    width: 8%;
+    height: 1px;
+    background-color: #ed3b5f;
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%);
+}
+
+/* end global */
+/* start navbar---------------------- */
+
+.nav {
+    background-color: #474747;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    width: 99%;
+
+}
+
+.navbar {
+    width: 75%;
+    margin: auto;
+}
+
+.navbar i {
+    float: left;
+    color: #ff305b;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 9px;
+}
+
+.navbar .links {
+    float: right;
+
+}
+
+.navbar .links ul li {
+    display: inline;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .links ul li:hover a {
+    color: #ff305b;
+    border-bottom: 2px red solid;
+
+}
+
+.nav .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+
+    transition: color .5s;
+
+}
+
+/* end navbar=----------------------- */
+/* start home=----------------------- */
+.home {
+    background-image: url(img/hero\ img.jpg);
+    height: calc(100vh - 3px);
+    position: relative;
+
+}
+
+.home .item {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.home .item .content {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.home .item .content h1 {
+    font-size: 64px;
+    padding: 5px;
+    margin: 0;
+    color: #ff305b;
+}
+
+.home .item .content p {
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+/* end home=----------------------- */
+/* start about=----------------------- */
+.about {
+    padding: 50px 0px;
+}
+
+.about .container {
+    width: 70%;
+    padding: 0 15px 22px;
+    overflow: hidden;
+
+
+}
+
+.about .container .item {
+    width: 50%;
+    float: left;
+
+}
+
+.about .container span {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.about .container .span {
+    color: #ff0033;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about .container p {
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+}
+
+.about .container hr {
+    border: dotted black 1px;
+}
+
+.about .container button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #ed3b5f;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.about .container button:hover {
+    background-color: #ff0033;
+}
+
+.about .container .item .img {
+    width: 70%;
+    border: solid black 8px;
+    border-radius: 2px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.about .container .item .img img {
+    width: 100%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.about .container .item .img .imgoverly {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(100%);
+    transition: transform 0.6s;
+
+
+}
+
+.about .container .item .img:hover .imgoverly {
+    transform: translate(0);
+}
+
+.about .container .item .img .imgoverly a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: transform .5s;
+}
+
+.about .container .item .img .imgoverly a.one {
+    color: white;
+}
+
+.about .container .item .img .imgoverly a.two {
+    color: rgb(95, 8, 157);
+}
+
+.about .container .item .img .imgoverly a.three {
+    color: rgb(0, 128, 255);
+}
+
+.about .container .item .img .imgoverly a.four {
+    color: rgb(160, 6, 153);
+}
+
+.about .container .item .img .imgoverly a:hover {
+    transform: scale(1.5);
+}
+
+/* end about=----------------------- */
+/* start service=----------------------- */
+.services {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.services .ourserver {
+    width: 75%;
+    margin: auto;
+    /* background-color: tomato; */
+}
+
+.services .ourserver .item {
+    width: 25%;
+    /* background-color: teal; */
+    text-align: center;
+    float: left;
+    /* padding-top: 20px; */
+    transition: background-color .2s;
+}
+
+.services .ourserver .item:hover {
+    box-shadow: 1px 1px 3px gray;
+    background-color: white;
+}
+
+.services .ourserver .item span {
+    color: #ff0033;
+}
+
+.services .ourserver .item h2 {
+    margin-top: 0;
+}
+
+.services .ourserver .item span {
+    font-size: 70px;
+
+}
+
+.services .ourserver .item p {
+    padding: 15px;
+}
+
+/* end sercice=----------------------- */
+/* start portfolio=----------------------- */
+.portfolio {
+    width: 75%;
+    margin: auto;
+    padding: 50px;
+}
+
+.portfolio .container {
+    width: 100%;
+}
+
+.portfolio .slider-img {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.3% - 20px);
+    margin: 10px;
+    float: left;
+}
+
+.portfolio .slider-img img {
+    width: 100%;
+}
+
+.portfolio .slider-img .img-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    transition: opacity .5s;
+}
+
+.portfolio .slider-img:hover .img-layer {
+    opacity: 1;
+}
+
+.portfolio .select {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio .select ul {
+    list-style: none;
+}
+
+.portfolio .select ul li {
+    display: inline;
+    padding: 10px;
+    transition: color .5s, border .5s;
+}
+
+.portfolio .select ul li:hover {
+    color: #ff0033;
+}
+
+/* end portfolio=----------------------- */
+/* start testimonial=----------------------- */
+.testimonialp {
+    padding: 50px 0;
+
+    background-color: #f1f1f1;
+}
+
+.testimonial {
+    width: 75%;
+    margin: auto;
+}
+
+.testimonial .item {
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding: 50px 0;
+}
+
+.testimonial .item i {
+    font-size: 40px;
+    font-weight: 900;
+    color: #ff0033;
+
+}
+
+.testimonial .item p.number {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+    margin: 10px;
+
+
+}
+
+.testimonial .item .p {
+    font-size: 20px;
+    color: #555555;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* end testimonial=----------------------- */
+/* start feedback=----------------------- */
+.feedback {
+    padding: 0 0 50px 0px;
+}
+
+.feedback .container {
+    width: 50%;
+    background-color: #f1f1f1;
+    margin: auto;
+    padding: 30px 0 30px 30px;
+    overflow: hidden;
+
+}
+
+.feedback .container .content {
+    float: left;
+
+}
+
+.feedback .container .content.img {
+    width: 20%;
+    position: relative;
+}
+
+.feedback .container .content.feed {
+    width: 80%;
+}
+
+.feedback .container .content img {
+    width: 85%;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.feedback .container .content.img::after {
+    content: "";
+    width: 200;
+    height: 300;
+    background-color: #ed3b5f;
+    position: absolute;
+    left: -105px;
+    top: -154px;
+    transform: rotate(45deg);
+}
+
+.feedback .container .content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.feedback .container .content p {
+    font-style: italic;
+}
+
+.feedback .container .content i {
+    font-size: 35px;
+    font-weight: 600;
+    color: gold;
+}
+
+/* end feedback=----------------------- */
+/* start Blog=----------------------- */
+.blog {
+    margin: auto;
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.blog .container {
+    width: 75%;
+
+}
+
+.blog .container .item {
+    width: calc(33.3% - 30px);
+    float: left;
+    margin: 15px;
+    background-color: white;
+
+}
+
+.blog .container .item .content {
+    padding-left: 10px;
+}
+
+.blog .container .item img {
+    width: 100%;
+}
+
+.blog .container .item .content h2 {
+    transition: color .5s;
+}
+
+.blog .container .item .content h2:hover {
+    color: #ed3b5f;
+}
+
+.blog .container .item .content i {
+    transition: color .5s;
+}
+
+.blog .container .item .content i:hover {
+    color: #ed3b5f;
+}
+
+/* end Blog=----------------------- */
+/*start buy=----------------------- */
+.contact{
+    padding: 50px   0px;
+}
+
+.contact .buy{
+    width: 50%;
+    margin: auto;
+    padding: 0 15px;
+}
+.contact .buy input,textarea{
+    padding: 0;
+    display: block;
+    float: left;
+    margin: 0;
+    border: 1px solid gray;
+    padding: 8px 15px;
+   margin-bottom:25px ;
+   line-height: 1.42857143
+
+}
+.contact button{
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff305b;
+    border-radius: 5px;
+    border: none;
+}
+.contact button:hover{
+    background-color: #ff0033;
+}
+
+.contact .buy .name{
+   width: 47%;
+   
+}
+
+.contact .buy .emali{
+  width: 47%;
+  margin-left: 45px;
+  
+  
+}
+.contact .buy .subject{
+    width: 100%;
+}
+.contact .buy .massage{
+    width: 100%;
+
+   
+}
+/* end buy=----------------------- */
+
+/* footer--- */
+.footer{
+    background-color: #333333 ;
+    color: white;
+    text-align: center;
+   padding:50px ;
+   margin-top: 30px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition: color .5s;
+}
+.footer a:hover {
+    color: #ff0033;
+}
+.footer  p{
+    margin: 20px 0 0 0;
+}
+.footer span{
+    color: #ff0033;
+}
+.footer span:hover{
+border-bottom: 2px #ff0033 solid;
+}
+
+/* footer--- */
